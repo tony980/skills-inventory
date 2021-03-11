@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+    <style type="text/css"> 
+        .navbar-brand { 
+            display: flex; 
+            width: 100%; 
+            justify-content: center; 
+        } 
+
+  
+    </style> 
+<body>
+<!--navigation-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><figure><img src="logo1.png" height="70" width="100" > 
+      <figcaption><h6 >REPUBLIC OF KENYA<br>MINISTRY OF LABOUR& SOCIAL PROTECTION</h6 ></figcaption></figure></a>
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" height="200">
+      <span class="navbar-toggler-icon"></span>
+      <a><img src="logo1.png"></a>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="">Home</a>
+          
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="">Contact</a>
+          
+         </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+     
+
+
+   
+
+   <br>
+   <p align="center"><u><i>proceed to fill in the details</i></u></p>
+
+
+
+   <br>
+<div class="form-group">
+
+<div class="col-lg-12">
+  <div class="row">
+    <div class="col-lg-1">
+        <label class="control-label col-xs-2" for="Person filling Questionnaire">Person filling Questionnaire:</label>
+    </div>
+    <div class="col-lg-6">
+        <input type="text" class="form-control" id="Person filling Questionnaire" placeholder="Name" name="Person filling Questionnaire"> 
+    </div>
+</div>
+
+
+</div><br>
+
+<div class="col-lg-12">
+  <div class="row">
+    <div class="col-lg-1">
+        <label class="control-label col-xs-2" for="Designation">Designation:</label>
+    </div>
+    <div class="col-lg-6">
+        <input type="text" class="form-control" id="Designation" placeholder="Designation" name="Designation"> 
+    </div>
+</div><br>
+
+
+<div class="form-group">
+<div class="col-lg-12">
+  <div class="row">
+    <div class="col-lg-1">
+        <label class="control-label col-xs-2" for="Official Signature">Official Signature:</label>
+    </div>
+    <div class="col-lg-6">
+        <input type="text" class="form-control" id="Official Signature" placeholder="Official Signature" name="Official Signature"> 
+    </div>
+
+
+    </div>
+   
+      
+</div>
+
+
+</div><br>
+
+
+<div class="form-group">
+<div class="col-lg-12">
+  <div class="row">
+    <div class="col-lg-1">
+        <label class="control-label col-xs-2" for="Date">Date:</label>
+    </div>
+    <div class="col-lg-6">
+       <input type="text" class="form-control" id="date" placeholder="date" name="date">  
+    </div>
+
+
+    </div>
+   
+      
+</div>
+
+
+</div><br>
+
+
+<div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <a ><button type="submit" class="btn btn-primary">Submit</button></a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<p align="center"><b> Thanks for Partcipating in this exercise</b></p>
+
+
+ 
+</body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<script>
+    $(document).ready(function(){
+        var date_input=$('input[name="date"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'dd/mm/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+</script>
+</html>
